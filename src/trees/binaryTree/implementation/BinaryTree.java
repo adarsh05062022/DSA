@@ -1,12 +1,12 @@
 package trees.binaryTree.implementation;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class BinaryTree {
-    private static class Node{
-          int value;
-          Node left;
-          Node right;
+    public static class Node{
+         public int value;
+        public   Node left;
+        public   Node right;
 
         public Node(int value){
             this.value = value;
@@ -17,6 +17,10 @@ public class BinaryTree {
 
     private Node root;
 
+
+    public Node getRoot(){
+        return root;
+    }
 
 
 
@@ -69,7 +73,14 @@ public class BinaryTree {
         BinaryTree tree = new BinaryTree();
         tree.populate(scanner);
         tree.display();
+
+
+        
     }
+
+
+
+
 
 
 }
